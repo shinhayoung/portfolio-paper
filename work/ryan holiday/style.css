@@ -1,0 +1,502 @@
+/* Reset */
+body, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+strong {
+  font-weight: inherit;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+/* Layout */
+.l_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.l_row {
+  display: flex;
+  row-gap: 60px;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+
+.l_col {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.l_col_12_12 { width: 100%; }
+.l_col_11_12 { width: 91.66666667%; }
+.l_col_10_12 { width: 83.33333333%; }
+.l_col_9_12  { width: 75%; }
+.l_col_8_12  { width: 66.66666667%; }
+.l_col_7_12  { width: 58.33333333%; }
+.l_col_6_12  { width: 50%; }
+.l_col_5_12  { width: 41.66666667%; }
+.l_col_4_12  { width: 33.33333333%; }
+.l_col_3_12  { width: 25%; }
+.l_col_2_12  { width: 16.66666667%; }
+.l_col_1_12  { width: 8.33333333%; }
+
+/* Common */
+.space-button {
+  background-color: #331d11;
+  box-shadow: inset 0 0 0 3px #20201e;
+  width: 600px;
+  height: 113px;
+  margin: 60px auto 80px;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.button { 
+  background-color: #643a24; 
+  width: 100%;
+  border: 3px solid #20201e;
+  border-radius: 25px;
+  padding: 20px 0;
+}
+
+.button h3 {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
+}
+
+.button p {
+  color: #b19c91;
+  font-size: 1.4rem;
+  padding-top: 3px;
+}
+
+/* Typography */
+:root {
+  font-size: 62.5%;
+}
+
+/* Components */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding-top: 250px;
+}
+
+/* header */
+.header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.header-logo {
+  display: none;
+}
+
+.gnb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+}
+
+.gnb li {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+}
+
+.gnb li:hover {
+  color: #fd6c02;
+}
+
+.gnb-logo {
+  width: 180px;
+}
+
+/* section-story */
+.section-story {
+  background-image: url(http://ryanholiday.co.kr/img/bg_mvisual.png); 
+  background-position: center top;
+  background-size: cover;
+}
+
+/* story-title */
+.story-title {
+  text-align: center;
+  padding-bottom: 100px;
+  color: #402f22;
+}
+
+.story-title h1 {
+  font-size: 5.4rem;
+  font-weight: 700;
+  letter-spacing: -2.3px;
+}
+
+.story-title p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+.story-title span {
+  color: #fd6c02;
+}
+
+/* story-map */
+.story-map {
+  position: relative;
+}
+
+.story-map-spot {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.story-map-spot1 {
+  width: 23.5vw;  
+  top: 32%;
+  left: 47.7%;
+  z-index: 10;  
+}
+
+.story-map-spot2 {
+  width: 42vw;
+  top: -18%;
+  left: 63.8%;
+}
+
+.story-map-spot3 {
+  width: 13vw;
+  top: 51%;
+  right: 11%;
+}
+
+/* story-map-spot-hov */
+.story-map-spot-hov {
+  width: 10.7vw;
+  height: 6.4vw;
+  border-radius: 20px;
+  z-index: 20;
+  position: absolute;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #624a2b;
+}
+
+.story-map-spot1-hov { 
+  top: 40%;
+  left: 8%;
+  background-color: #ee99a6;
+}
+
+.story-map-spot2-hov {
+  bottom: 15%;
+  right: 22%;
+  background-color: #b0ca6d;
+}
+
+.story-map-spot3-hov {
+  top: 85%;
+  left: 60%;
+  background-color: #eab475;
+}
+
+.story-map-spot-hov span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  border: 2px solid #624a2b;
+  border-radius: 20px;
+  transform: translateY(-7px);
+  box-sizing: border-box;
+  background-size: 60%;
+}
+
+.story-map-spot1-hov span {
+  background-image: url(http://ryanholiday.co.kr/img/logo_mv_01.svg);
+  background-color: #fadedc;
+}
+
+.story-map-spot2-hov span {
+  background-image: url(http://ryanholiday.co.kr/img/logo_mv_02.svg);
+  background-color: #e7f0d0;
+}
+
+.story-map-spot3-hov span {
+  background-image: url(http://ryanholiday.co.kr/img/logo_mv_03.svg);
+  background-color: #feedd9;
+}
+
+/* story-text */
+.story-text {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.story-text p {
+  font-size: 2.5rem;
+  line-height: 2em;
+  color: #402f22;
+  padding-bottom: 50px;
+}
+
+.story-text p span {
+  background-image: url(http://ryanholiday.co.kr/img/img_mv_txt.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 345px;
+  height: 148px;
+  margin: 0 auto;
+  text-indent: -9999;
+  margin-top: 50px;
+}
+
+/* story-bag */
+.story-bag {
+  height: 1900px;
+  position: relative;
+}
+
+.story-bag .bubble {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 26px 60px;
+}
+
+.story-bag .bubble::after {
+  content: ' ';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(http://ryanholiday.co.kr/img/ico_arrow_down.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.story-bag .bubble p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: #402f22;
+}
+
+.story-bag .bubble p span {
+  color: #fd6c02;
+}
+
+/* section-space */
+.section-space {
+  background-image: url(http://ryanholiday.co.kr/img/bg_main03.png);
+  background-size: cover;
+  background-position: center top;
+  padding: 180px 0 100px;
+  position: relative;
+}
+
+.card {
+  padding: 0 50px;
+}
+
+.card-cover {
+  border: 3px solid #20201e;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.card-item {
+  background-color: #fff;
+  border: 3px solid #20201e;
+  border-radius: 30px;
+  padding: 20px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #402f22;
+}
+
+.card-item h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
+}
+
+.card-item-contents p {
+  font-size: 1.4rem;
+  color: #999;
+  padding-bottom: 3px;
+}
+
+.card-item-contents strong {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.space-handle {
+  text-align: center;
+  position: relative;
+}
+
+.space-handle::before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #20201e;
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+.space-handle-cover {
+  width: 72%;
+  position: relative;
+}
+
+/* space-edge */
+.edge {
+  background-size: cover;
+  background-position: center;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+}
+
+.edge_tl {
+  background-image: url(http://ryanholiday.co.kr/img/img_edge_01.png);
+  top: 0;
+  left: 0;
+}
+
+.edge_tr {
+  background-image: url(http://ryanholiday.co.kr/img/img_edge_02.png);
+  top: 0;
+  right: 0;
+}
+
+.edge_bl {
+  background-image: url(http://ryanholiday.co.kr/img/img_edge_03.png);
+  bottom: 0;
+  left: 0;
+}
+
+.edge_br {
+  background-image: url(http://ryanholiday.co.kr/img/img_edge_04.png);
+  bottom: 0;
+  right: 0;
+}
+
+/* section-ticket */
+.section-ticket {
+  background-color: #ebebeb;
+  padding: 100px 0;
+}
+
+.container {
+  display: flex;
+}
+
+.container-sidebar {
+  width: 470px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.container-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #fe6b00;
+  padding: 35px;
+}
+
+.container-sidebar-header h4 {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.container-sidebar-header a {
+  font-size: 1.8rem;
+  background-color: #fe9d55;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.contents {
+  padding: 0 35px;
+  color: #331d11;
+}
+
+.contents li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.contents li:last-child {
+  display: block;
+}
+
+.contents li p span {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.contents-header {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,126 @@
+/* Reset */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Layout */
+.l_wrapper {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Components */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/bg.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.screen {
+  overflow: hidden;
+  width: 600px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.screen::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  background-image: url(images/cover.png);
+  background-size: cover;
+  pointer-events: none;
+}
+
+.screen-cover {
+  display: block;
+  display: flex;
+  position: relative;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-indent: -9999px;
+  padding: 0 10px;
+  width: 580px;
+  opacity: 0;
+}
+
+.screen:hover .nav {
+  opacity: 1;
+}
+
+.nav a {
+  display: block;
+  background-image: url(images/arrow.png);
+  height: 50px;
+  width: 30px;
+}
+
+.nav a.prev {
+  background-position: 0 -15px;
+}
+
+.nav a.next {
+  background-position: 30px -15px;
+  margin-left: auto;
+}
+
+.nav a:hover {
+  background-position-y: -95px;
+}
+
+.herologo {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.herologo li {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 100% 100%;
+  opacity: 30%;
+  cursor: pointer;
+}
+
+.herologo li.active {
+  opacity: 100%;
+}
+
+.herologo li:first-child {
+  background-color: #211f21;
+}
+
+.herologo-cover {
+  border-radius: 100%;
+  width: 85%;
+  height: 85%;
+}
+
+
