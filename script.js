@@ -50,7 +50,7 @@
 
     /* tabmenu-explanation */
     var slide = function() {
-      $(".tabmenu-explanation li").animate({ left: -1000 * current });
+      $(".tabmenu-explanation li").animate({ left: -1100 * current });
     };
 
     /* gnb up */
