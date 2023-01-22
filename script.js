@@ -44,14 +44,6 @@
       posX = posX - speed;  
       $world.css("background-position", posX);
       }, 100);
-    
-    /* tabmenu-tooltip */
-
-
-    /* tabmenu-explanation */
-    var slide = function() {
-      $(".tabmenu-explanation li").animate({ left: -1100 * current });
-    };
 
     /* gnb up */
     var $section = $("[data-section]");
@@ -170,21 +162,6 @@
     });
 
     /* section-skill */
-    $(".tabmenu li").click( function( event ) {
-      event.preventDefault();
-
-      var $this = $(this);
-      current = $this.index();
-      var $current = $(".tabmenu li").eq(current);
-      var $siblings = $(".tabmenu li").not($current);
-      
-     
-      $current.addClass("active");
-      $siblings.removeClass("active");
-      slide(current);
-      
-    }).eq(0)
-      .trigger("click");
     
     /* section-work */
     $(".work-container-title").click( function( event ) {
