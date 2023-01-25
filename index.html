@@ -165,26 +165,27 @@
   </header>
 
   <main class="main">
-    <section class="section-home">
-      <div class="home-container">
-        <div class="home-container-world">
-          <img class="cooper" src="images/cooper.png">
+    <div class="l_wrapper">
+      <section class="section-home">
+        <div class="home-container">
+          <div class="home-container-world">
+            <img class="cooper" src="images/cooper.png">
+          </div>
+          <div class="home-container-item">
+            <h1>THE MARIO REAL TRIP</h1>
+            <div class="play sidebar">
+              <p class="move">PLAY GAME</p>
+              <ul class="manual">
+                <li class="move">Start <span>Enter</span></li>
+                <li class="move">Jump <span>J</span></li>
+                <li class="move">Booster <span>B</span></li>
+                <li class="move">Stop <span>S</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="home-container-sidebar">
-          <p class="move">PLAY GAME</p>
-          <ul class="manual">
-            <li class="move">Start <span>Enter</span></li>
-            <li class="move">Jump <span>J</span></li>
-            <li class="move">Booster <span>B</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="home-container-item">
-        <div class="l_wrapper">
-          <h1>THE MARIO REAL TRIP</h1>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="section-skill" data-section="skill">
       <div class="l_wrapper">
@@ -194,7 +195,9 @@
             <div class="card-item-contents">
               <span>I.I</span>
               <h4>CODING</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum quam magni architecto corporis laboriosam nesciunt. Nulla, dolore. Nulla amet suscipit impedit fugiat asperiores adipisci nisi neque beatae illum rem.</p>
+              <p>
+                웹 표준, 웹 접근성을 고려한 시멘틱 마크업을 준수하고 순차적인 코드 들여쓰기를 지향합니다. 또한 적응형 웹 뿐만 아니라 반응형 웹까지 고려해 디스플레이에 따라 코드를 작성하며 클래스를 이용한 코드 재사용과 유지보수를 용이하게 만들고 원하는 동작을 구현해냅니다.
+              </p>
               <h5>PROGRAM</h5>
               <ul class="program l_row">
                 <li class="l_col l_col_6_12">HTML</li>
@@ -203,7 +206,7 @@
                 <li class="l_col l_col_6_12">JAVASCRIPT</li>
               </ul>
             </div>
-            <div class="card-item-cover">
+            <div class="card-item-cover first">
               <img class="card-item-cover-src" src="images/skill-coding.png">
             </div>
           </li>
@@ -211,7 +214,9 @@
             <div class="card-item-contents">
               <span>I.II</span>
               <h4>DESIGN</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum quam magni architecto corporis laboriosam nesciunt. Nulla, dolore. Nulla amet suscipit impedit fugiat asperiores adipisci nisi neque beatae illum rem.</p>
+              <p>
+                웹 사이트의 로고나 이미지 활용을 위해 프로그램 안에 있는 다양한 툴을 이용하여 제가 가지고 있는 스킬들로 이미지의 편집이나 보정, 로고 등을 만들어냅니다.
+              </p>
               <h5>PROGRAM</h5>
               <ul class="program l_row">
                 <li class="l_col l_col_6_12">PHOTOSHOP</li>
@@ -226,7 +231,7 @@
             <div class="card-item-contents">
               <span>I.III</span>
               <h4>COOPERATION</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum quam magni architecto corporis laboriosam nesciunt. Nulla, dolore. Nulla amet suscipit impedit fugiat asperiores adipisci nisi neque beatae illum rem.</p>
+              <p>진행하고 있는 프로젝트의 버전관리를 통해 체계적인 개발이 가능하며 개인 프로젝트 뿐만 아니라 여러명이 동시에 작업하는 프로젝트에서 협업이 가능합니다.</p>
               <h5>PROGRAM</h5>
               <ul class="program l_row">
                 <li class="l_col l_col_6_12">GIT</li>
@@ -239,7 +244,7 @@
           </li>
         </ul>
       </div>
-      <div class="gnb-sidebar">
+      <div class="gnb-sidebar sidebar">
         <p class="move">INTRODUCTION</p>
         <ul class="manual">
           <li class="move">
@@ -271,9 +276,16 @@
               <div class="detail">
                 <img class="detail-cover" src="images/diseny+.png">
                 <div class="detail-contents">
+                  <h5>DETAIL</h5>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione ipsam aspernatur sint quis rerum ad. Consequatur optio eligendi quaerat cumque provident aut minima, dolores voluptates, alias fugiat quia maiores.
+                    디즈니 플러스의 웹 사이트입니다. 
+                    <br>폼을 이용해 이메일을 작성할 수 있게 만들었으며 반응형에 쉽게 대응이 가능하도록 코드를 작성하여 관리하였고 토글을 이용하여 접었다 폈다 할 수 있는 아코디언 메뉴를 만들었습니다. 
                   </p>
+                  <ul class="tag">
+                    <li>#반응형</li>
+                    <li>#폼</li>
+                    <li>#토글</li>
+                  </ul>
                   <div class="open">
                     <button onclick="window.open('work/disney+/index.html')" class="open-button">
                       WEBSITE 보러가기
@@ -292,12 +304,19 @@
               <div class="detail">
                 <img class="detail-cover" src="images/pixar.png">
                 <div class="detail-contents">
+                  <h5>DETAIL</h5>
                   <p>
-                    pixar 리디자인 웹 사이트입니다. 데스크탑, 랩탑, 테블릿, 모바일을 고려해 만든 반응형 사이트이며 반응형에 쉽게 대응할 수 있도록 코드를 작성하였습니다. 또한 이미지가 로딩될
+                    픽사 리디자인 웹 사이트입니다. 
+                    <br>다양한 디스플레이를 고려해 만든 반응형 사이트이며 반응형에 쉽게 대응할 수 있도록 코드를 작성하였습니다. 또한 이미지가 로딩될
                     때
                     이미지의 공간이 사라져서 글씨가 올라와 잘못 클릭하는 등 발생될 수 있는 문제점을 해결하였습니다.<br>
                     (MONSTER INC 서브 페이지가 포함되어 있습니다.)
                   </p>
+                  <ul class="tag">
+                    <li>#반응형</li>
+                    <li>#그리드</li>
+                    <li>#서브페이지</li>
+                  </ul>
                   <div class="open">
                     <button onclick="window.open('work/pixar/index.html')" class="open-button">
                       WEBSITE 보러가기
@@ -316,12 +335,47 @@
               <div class="detail">
                 <img class="detail-cover" src="images/cinema.png">
                 <div class="detail-contents">
+                  <h5>DETAIL</h5>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vel ea adipisci sit, explicabo, commodi odio velit placeat optio debitis harum laborum impedit molestias consequuntur exercitationem omnis in ex voluptatem?
+                    마블 영화관 컨셉의 웹 사이트입니다.
+                    <br>동작이 됐을 때 사용 될 클래스를 따로 만들어 관리하였고 아이콘 클릭 이벤트를 슬라이드 버튼과 연결하여 보다 매끄러운 슬라이드를 구현하였습니다.
                   </p>
+                  <ul class="tag">
+                    <li>#적응형</li>
+                    <li>#슬라이드</li>
+                    <li>#클릭 이벤트</li>
+                  </ul>
                   <div class="open">
                     <button onclick="window.open('work/cinema/index.html')" class="open-button">
                       WEBSITE 보러가기
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="work-container-title" href="">
+              <p>II.VI</p>
+              <h4>GRAZIE</h4>
+            </a>
+            <div class="work-container-item">
+              <div class="detail">
+                <img class="detail-cover" src="images/grazie.png">
+                <div class="detail-contents">
+                  <h5>DETAIL</h5>
+                  <p>
+                    팀으로 진행한 협업 프로젝트입니다.
+                    <br>그라찌아라는 카페 웹 사이트를 리뉴얼 하는 프로젝트이며 경쟁사 분석, 페르소나 설정, 컨셉, 디자인, 구조, 와이어프레임, 스토리 보드 등을 이용해 하나의 웹 사이트를 만들기 위해 필요한 과정들을 배웠습니다.
+                  </p>
+                  <ul class="tag">
+                    <li>#리뉴얼</li>
+                    <li>#협업</li>
+                    <li>#기획</li>
+                  </ul>
+                  <div class="open">
+                    <button onclick="window.open('work/grazie_ver1.pdf')" class="open-button">
+                      project 보러가기
                     </button>
                   </div>
                 </div>

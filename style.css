@@ -85,6 +85,7 @@ button {
   padding: 20px 30px; 
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .open-button:hover {
@@ -193,20 +194,27 @@ body {
 /* section-home */
 .section-home {
   position: relative;
+  padding-bottom: 180px;
 }
 
 .home-container {
   display: flex;
   justify-content: end;
+  opacity: 0;
+}
+
+.home-container.up {
+  opacity: 1;
 }
 
 .home-container-world {
   background-image: url(images/world.png);
   background-position: 0 0;
   background-size: cover;
-  width: 76vw;
+  width: 100%;
   height: 500px;
   position: relative;
+  margin: 20px 30px 20px 0;
 }
 
 .home-container-world .cooper {
@@ -217,14 +225,29 @@ body {
   width: 150px;
 }
 
-.home-container-sidebar {
-  padding: 20px 0;
-  max-width: 160px;
-  flex-shrink: 0;
-  overflow: hidden;
+.home-container-item h1 {
+  font-size: 10rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 40px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid;
 }
 
-.home-container-sidebar p, .gnb-sidebar p {
+.play {
+  padding: 20px 0 20px 10px;
+  width: 160px;
+  height: 92%;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-left: 1px solid;
+}
+
+.sidebar p {
   line-height: 1;
   padding: 0 0 15px 15px;
   margin-left: 160px;
@@ -249,16 +272,8 @@ body {
 .manual li span {
   border: 0.5px solid;
   padding: 0 10px;
+  margin-left: 5px;
   box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 1);
-}
-
-.home-container-item h1 {
-  font-size: 10rem;
-  font-weight: 600;
-  line-height: 1;
-  padding: 40px 0;
-  text-align: center;
-  border-bottom: 1px solid;
 }
 
 /* section-skill */
@@ -291,7 +306,7 @@ body {
 }
 
 .card-item-contents p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 10px 0 60px;
 }
 
@@ -302,10 +317,7 @@ body {
 }
 
 .program li {
-  font-size: 1.4rem;
-  background-color: #303030;
-  color: #efc0bf;
-  padding: 5px;
+  font-size: 1.5rem;
 }
 
 .card-item-cover {
@@ -338,35 +350,37 @@ body {
   padding: 50px 0;
 }
 
-.work-container li {
+.work-container > li {
   border: 1px solid;
   position: relative;
-  font-family: 'Sunflower', sans-serif;
   margin-bottom: -1px;
 }
 
 .work-container-title {
   display: block;
   padding: 50px;
+  font-family: 'Sunflower', sans-serif;
+  transition: all 2s ease-out;
 }
 
 .work-container-title:hover { 
   background-position: center top;
   background-size: cover;
   color: #fff;
+  background-position: center; 
 }
 
 .work-container li:first-child a:hover {
   background-image: url(images/diseny+.png);
 }
-
 .work-container li:nth-child(2) a:hover {
   background-image: url(images/pixar.png);
 }
-
+.work-container li:nth-child(3) a:hover {
+ background-image: url(images/cinema.png);
+}
 .work-container li:last-child a:hover {
-  background-image: url(images/cinema.png);
-  background-position: center;
+  background-image: url(images/grazie.png);
 }
 
 .work-container-title p {
@@ -390,35 +404,43 @@ body {
 
 .detail {
   background-color: #e3e0dd;
-  padding: 20px;
   display: flex;
+  align-items: center;
 }
 
 .detail-cover {
-  width: 50%;
+  width: 55%;
   height: auto;
   aspect-ratio: 4/3;
-  padding: 50px 70px 50px 50px;
-  border-right: 0.5px solid #303030;
+  padding: 80px 50px;
+  border-right: 1px solid #303030;
+  margin: 20px 0;
 }
 
 .detail-contents {
   color: #303030;
-  margin: 50px 50px 50px 70px;
-  font-size: 1.4rem;
-  position: relative;
+  padding: 50px;
+}
+
+.detail-contents h5 {
+  font-size: 4.8rem;
+  font-weight: 700;
 }
 
 .detail-contents p {
-  padding-bottom: 20px;
+  font-size: 1.4rem;
+  padding-top: 10px;
 }
 
-.open {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.tag {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0 60px;
+}
+
+.tag li {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 /* section-contact */
@@ -531,13 +553,13 @@ body {
 }
 @media (max-width: 1100px){
   .work-container-title h4 {
-    font-size: 10rem;
+    font-size: 10vw;
   }
 }
 
 @media (max-width: 960px){
   :root {
-    font-size: 55%;
+    font-size: 70%;
   }
 
   .header-line-logo {
@@ -546,7 +568,7 @@ body {
   }
 
   .header-title {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   .gnb.fixed {
@@ -558,41 +580,102 @@ body {
     padding: 10px;
   }
 
+  .gnb li {
+    width: 80px;
+  }
+
   .gnb-sidebar {
     display: none;
   }
 
-  .home-container-sidebar {
+  .section-home {
+    padding: 0;
+  }
+
+  .home-container {
+    display: block;
+  }
+
+  .home-container-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
     padding: 50px 0;
   }
 
+  .home-container-item h1 {
+    position: initial;
+    width: 70%;
+    font-size: 8rem;
+    padding: 40px 30px;
+    border: none;
+  }
+
+  .play {
+    width: 100%;
+    height: auto;
+    flex-shrink: 1;
+    padding: 30px 20px;
+  }
+
+  .play p {
+    font-size: 2.8rem;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .manual li {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .section-skill {
+    padding: 50px 0 0;
+  }
+
+  .card-item {
+    flex-direction: column-reverse;
+  }
+
+  .card-item-contents {
+    width: 80vw;
+    padding: 0 0 80px;
+  }
+
+  .card-item-cover {
+    width: 80vw;
+    border: none;
+    padding: 80px 0;
+    margin: 0;
+  }
+
+  .card-item-cover.first {
+    padding: 0 0 80px;
+  }
+
   .work-container-title p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .work-container-title h4 {
-    font-size: 9.2rem;
-  }
-
-  .work-container-item {
-    text-align: center;
+    font-size: 7rem;
   }
 
   .detail {
-    display: block;
-    padding: 50px;
+    flex-direction: column;
   }
 
   .detail-cover {
-    width: 65%;
+    width: 80%;
     border-right: none; 
-    padding: 0 0 50px;
+    padding: 80px 0;
+    margin: 0;
   }
 
   .detail-contents {
-    margin: 0;
-    padding: 50px 100px 100px;
-    border-top: 0.5px solid #303030;
+    margin: 0 20px;
+    padding: 80px;
+    border-top: 1px solid #303030;
   }
 
   .information-cover-src {
@@ -616,7 +699,7 @@ body {
   .l_col_mobile_1_12  { width: 8.33333333%; }
 
   .header-line p {
-    width: 44%;
+    width: 43%;
   }
 
   .header-title {
@@ -625,17 +708,5 @@ body {
 
   .home-container-item h1 {
     font-size: 9rem;
-  }
-
-  .tabmenu li a {
-    font-size: 2.4rem;
-  }
-
-  .tabmenu-explanation {
-    font-size: 3.8rem;
-  }
-
-  .work-container-title h4 {
-    font-size: 7rem;
   }
 }

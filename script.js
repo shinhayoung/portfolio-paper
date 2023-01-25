@@ -77,6 +77,9 @@
       };
     });
 
+    /* section-home */
+    $(".home-container").delay(2600).addClass("up",1000);
+
      /* home-container-world */
      $(window).keydown( function( event ) {
       if( event.keyCode == 13 ){
@@ -100,14 +103,20 @@
       };
     });
 
-    /* home-container-sidebar */
+    $(window).keydown( function( event ) {
+      if( event.keyCode == 83 ){
+        speed = 0;
+      };
+    });
+
+    /* play */
     $(window).scroll( function() {
       var headerScroll = $(".section-home").offset().top-100;
       var nowScroll = $(this).scrollTop();
 
       if( headerScroll <= nowScroll ){
         anime({
-          targets: '.home-container-sidebar .move',
+          targets: '.play .move',
           translateX: -150,
           delay: anime.stagger(100)
         });
@@ -160,8 +169,6 @@
         scrollTop : posY 
       }); 
     });
-
-    /* section-skill */
     
     /* section-work */
     $(".work-container-title").click( function( event ) {
