@@ -25,7 +25,8 @@
         $this.find("p").text("+");
       }else{
         $this.siblings().slideDown(200);
-        $this.find("p").text("-");
+        $this.find("p")
+        .text("-");
       }; 
     });
 

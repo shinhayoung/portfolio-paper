@@ -34,6 +34,14 @@ button {
   background-color: transparent;
 }
 
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
 /* Layout */
 .l_wrapper {
   max-width: 1280px;
